@@ -4,6 +4,8 @@ var express = require("express");
 var logger = require("morgan");
 var bodyParser = require("body-parser");
 var app = express();
+const PORT = process.env.PORT || 5000
+
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 var entries = [];
