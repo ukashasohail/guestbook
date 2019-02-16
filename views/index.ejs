@@ -1,6 +1,7 @@
 <% include header %>
 <% if (entries.length) { %>
 <% entries.forEach(function(entry) { %>
+    >
 <div class="panel panel-default">
     <div class="panel-heading">
         <div class="text-muted pull-right">
@@ -9,7 +10,7 @@
         <%= entry.title %>
     </div>
     <div class="panel-body">
-        <%= entry.body %>
+        <%= entry.content %>
     </div>
 </div>
 <% }) %>

@@ -1,14 +1,26 @@
 <% include header %>
+<style>
+    body{
+        background-color: black
+    }
+    h1{
+        color: rgb(4, 216, 4)
+    }
+    h2{
+        color: rgba(17, 172, 219, 0.993)
+    }
+</style>
+
 <h2>Write a new entry</h2>
 <form method="post" role="form">
     <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title"><h2>Title</h2></label></label>
 
-        <input type="text" class="form-control" id="title" ➥ name="title" placeholder="Enter your comments" required>
+        <input type="text" class="form-control" id="title" ➥ name="title" placeholder="Enter Title" required>
     </div>
     <div class="form-group">
-        <label for="content">Entry text</label>
-        <textarea class="form-control" id="body" name="body" ➥ placeholder="Dont leave this field empty!! type anything...."
+        <label for="content"><h2> Enter Your Comments</h2></label>
+        <textarea class="form-control" id="body" name="body" ➥ placeholder="Write a comment"
             rows="3" required></textarea>
     </div>
     <div class="form-group">
